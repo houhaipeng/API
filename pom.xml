@@ -11,6 +11,7 @@
     <modules>
         <module>rocketmq</module>
         <module>mybatis-plus</module>
+        <module>common</module>
     </modules>
 
     <parent>
