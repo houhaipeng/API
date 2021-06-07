@@ -15,6 +15,7 @@
         <module>easyexcel</module>
         <module>schedule</module>
         <module>mongodb</module>
+        <module>jwt</module>
     </modules>
 
     <parent>
