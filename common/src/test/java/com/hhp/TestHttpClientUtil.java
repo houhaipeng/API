@@ -28,7 +28,7 @@ public class TestHttpClientUtil {
 //        String url = "https://github.com/houhaipeng/API";
         String url = "https://www.baidu.com";
         //
-//        String html = HttpClientUtil.get(HttpConfig.custom().url(url));
+//        String html = HttpClientUtil.get(HttpConfig.custom().url(url));T
 //        System.out.println(html);
 
         Header[] headers = HttpHeader.custom()
