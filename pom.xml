@@ -12,6 +12,9 @@
         <module>rocketmq</module>
         <module>mybatis-plus</module>
         <module>common</module>
+        <module>easyexcel</module>
+        <module>schedule</module>
+        <module>mongodb</module>
     </modules>
 
     <parent>
