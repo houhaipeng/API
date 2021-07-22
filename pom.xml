@@ -16,6 +16,8 @@
         <module>schedule</module>
         <module>mongodb</module>
         <module>jwt</module>
+        <module>quartz</module>
+        <module>JDK-API</module>
         <module>schedule</module>
     </modules>
 
