@@ -16,6 +16,7 @@
         <module>schedule</module>
         <module>mongodb</module>
         <module>jwt</module>
+        <module>schedule</module>
     </modules>
 
     <parent>
