@@ -19,6 +19,7 @@
         <module>quartz</module>
         <module>JDK-API</module>
         <module>schedule</module>
+        <module>OSS</module>
     </modules>
 
     <parent>

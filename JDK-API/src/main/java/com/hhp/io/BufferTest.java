@@ -63,4 +63,10 @@ public class BufferTest {
 //        fos.close();
 
     }
+
+    @Test
+    public void test() {
+        String str = "abc/def/ghi/jkl";
+        System.out.println(str.substring(str.indexOf("def")));;
+    }
 }
