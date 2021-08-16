@@ -8,6 +8,7 @@ import com.arronlong.httpclientutil.common.SSLs;
 import com.arronlong.httpclientutil.exception.HttpProcessException;
 import org.apache.http.Header;
 import org.apache.http.client.HttpClient;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,5 +46,11 @@ public class Demo {
         String result1 = HttpClientUtil.get(config);
         System.out.println("=====================");
         System.out.println(result1);
+    }
+
+    @Test
+    public void test() {
+        HashMap<String, Object> stringObjectHashMap = new HashMap<>();
+        System.out.println(stringObjectHashMap.keySet().contains("a"));
     }
 }
