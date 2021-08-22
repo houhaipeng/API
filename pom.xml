@@ -22,6 +22,7 @@
         <module>schedule</module>
         <module>OSS</module>
         <module>zookeeper</module>
+        <module>shiro</module>
     </modules>
 
     <parent>
