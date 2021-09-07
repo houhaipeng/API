@@ -20,6 +20,7 @@ public class Server {
         ByteBuffer buffer = ByteBuffer.allocate(16);
         //1.创建服务器
         ServerSocketChannel ssc = ServerSocketChannel.open();
+        ssc.configureBlocking(false);//非阻塞模式
         //2.绑定监听端口
         ssc.bind(new InetSocketAddress(8080));
         //3.连接集合
@@ -27,13 +28,13 @@ public class Server {
         while (true) {
             //4.accept,建立与客户端连接,socketChannel用来与客户端通信
             log.debug("connecting....");
-            SocketChannel sc = ssc.accept();
+            SocketChannel sc = ssc.accept();//阻塞方法,线程停止运行
             log.debug("connected....{}", sc);
             channels.add(sc);
             for (SocketChannel channel : channels) {
                 //5.接收客户端发送的数据
                 log.debug("before read...{}", channel);
-                channel.read(buffer);
+                channel.read(buffer);//阻塞方法，线程停止运行
                 buffer.flip();
                 debugRead(buffer);
                 buffer.clear();
